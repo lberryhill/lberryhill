@@ -40,7 +40,7 @@ h2 {
    font-family: Bilo, sans-serif;  
    font-weight: 800;  
    font-style: normal;
-   font-size: 3.5rem;
+   font-size: 3 rem;
    text-align: left;
    margin-left:  1rem;
 }
@@ -52,7 +52,7 @@ h3 {
    font-family: Bilo, sans-serif;  
    font-weight: 300;  
    font-style: normal;
-   font-size: 2.5rem;
+   font-size: 2rem;
    margin-left:  1rem;
 }
 
@@ -82,7 +82,7 @@ margin-left: .5em;
 text-align: center;
 Font-family: Bilo, sans-serif;  
 Font-weight: bold;
-Font-size: 1.4em;
+Font-size: 1em;
 Text-transform: uppercase;
 letter-spacing: 0.05em;
 }
