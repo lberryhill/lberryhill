@@ -17,6 +17,21 @@ div.container {
     margin: 0 auto;
 }
 
+div.container-stories {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+div.container-photo {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+div.container-subscribe {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
 section{
 	max-width: 80em;
 }
@@ -66,6 +81,97 @@ figcaption{
 	font-style: italic;
 }
 
+
+
+main.photo-gallery {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(57% + 3em);
+}
+
+figure.photo {
+    margin: 0;
+    width: 75%;
+    position: absolute;
+    opacity: 0;
+    transition: left .5s;
+}
+
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+div.selector {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: .2em;
+}
+
+label{
+	flex: 1 0 10em;
+}
+
+div.container-photo input{
+    display: none;
+}
+
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="name"],
+section ul li select {
+	flex: 2 0 30em;
+	box-sizing: border-box;
+}
+
+section.personal-info ul li label {
+	flex: 0 0 4em;
+}
+	
+	
+h3 {
+	margin: 2em 0 0;
+	}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+	}
+	
+section {
+    margin-bottom: 1em;
+}
+
+section p {
+	margin-top: 0;
+}
+
+textarea {
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 6em;
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 0.4em;
+	font-family: sans-serif;
+	color: #777;
+	}
+
 @media screen and (min-width: 60em){
 	
 	ul li{
@@ -73,7 +179,7 @@ figcaption{
 	margin-right: 1em;
 }
 
-	div.container{
+	div.container, div.container-stories{
 		display: grid;
 		grid-template-columns: 3fr 1fr;
 		grid-gap: 0 2em;
@@ -136,4 +242,8 @@ figcaption{
 	aside{
 		grid-column: 2/3;
 	}
+
+	div.container-subscribe {
+    	margin: auto;
+  }
 }
