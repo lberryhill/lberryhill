@@ -82,16 +82,20 @@ figcaption{
 }
 
 
+div.photogallery {
+			max-width: 50em;
+
+}
 
 main.photo-gallery {
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(57% + 3em);
+    padding-bottom: calc(75% + 3em);
 }
 
 figure.photo {
     margin: 0;
-    width: 75%;
+    width: 100%;
     position: absolute;
     opacity: 0;
     transition: left .5s;
@@ -194,6 +198,10 @@ textarea {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 0 1em;
+	}
+
+	main.photo-gallery {
+		display: block;
 	}
 
 	section{
